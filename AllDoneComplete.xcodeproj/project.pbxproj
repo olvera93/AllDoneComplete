@@ -10,6 +10,8 @@
 		2893F5C92EA6D33B00B9840B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2893F5C82EA6D33B00B9840B /* FirebaseAnalytics */; };
 		2893F5CB2EA6D33B00B9840B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2893F5CA2EA6D33B00B9840B /* FirebaseAuth */; };
 		2893F5CD2EA6D33B00B9840B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2893F5CC2EA6D33B00B9840B /* FirebaseFirestore */; };
+		2893F5D02EA6D73500B9840B /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 2893F5CF2EA6D73500B9840B /* Factory */; };
+		2893F5D22EA6D73500B9840B /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2893F5D12EA6D73500B9840B /* FactoryKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 			files = (
 				2893F5C92EA6D33B00B9840B /* FirebaseAnalytics in Frameworks */,
 				2893F5CB2EA6D33B00B9840B /* FirebaseAuth in Frameworks */,
+				2893F5D22EA6D73500B9840B /* FactoryKit in Frameworks */,
 				2893F5CD2EA6D33B00B9840B /* FirebaseFirestore in Frameworks */,
+				2893F5D02EA6D73500B9840B /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,8 @@
 				2893F5C82EA6D33B00B9840B /* FirebaseAnalytics */,
 				2893F5CA2EA6D33B00B9840B /* FirebaseAuth */,
 				2893F5CC2EA6D33B00B9840B /* FirebaseFirestore */,
+				2893F5CF2EA6D73500B9840B /* Factory */,
+				2893F5D12EA6D73500B9840B /* FactoryKit */,
 			);
 			productName = AllDoneComplete;
 			productReference = 2893F5A92EA6B84400B9840B /* AllDoneComplete.app */;
@@ -108,6 +114,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				2893F5C72EA6D33B00B9840B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2893F5CE2EA6D73500B9840B /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2893F5AA2EA6B84400B9840B /* Products */;
@@ -353,6 +360,14 @@
 				minimumVersion = 12.4.0;
 			};
 		};
+		2893F5CE2EA6D73500B9840B /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -370,6 +385,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2893F5C72EA6D33B00B9840B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		2893F5CF2EA6D73500B9840B /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2893F5CE2EA6D73500B9840B /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		2893F5D12EA6D73500B9840B /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2893F5CE2EA6D73500B9840B /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
